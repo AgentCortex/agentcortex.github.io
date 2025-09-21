@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Button from './Button';
 import './About.css';
 
@@ -199,7 +200,9 @@ const About = () => {
             Be part of the future where artificial intelligence thinks like the human mind
           </p>
           <div className="cta-buttons">
-            <Button variant="primary" size="xl">Start Free Trial</Button>
+            <Link to="/start-trial">
+              <Button variant="primary" size="xl">Start Free Trial</Button>
+            </Link>
             <Button variant="outline" size="xl">Contact Us</Button>
           </div>
         </div>

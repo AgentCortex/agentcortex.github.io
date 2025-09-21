@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Button from './Button';
 import './Header.css';
 import AgenticCortex from '../icon/AgenticCortex';
@@ -11,24 +12,27 @@ const Header = () => {
       <div className="container">
         <div className="header-content">
           {/* Logo */}
-          <div className="logo">
-            {/* <img src="/AgenticCortex.svg" alt="AgenticCortex" className="logo-img animate-pulse-glow" /> */}
+          <Link to="/" className="logo">
             <AgenticCortex className="logo-img "/>
             <span className="logo-text gradient-text">AgenticCortex</span>
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="nav-desktop">
-            <a href="#features" className="nav-link">Features</a>
-            <a href="#technology" className="nav-link">Technology</a>
-            <a href="#pricing" className="nav-link">Pricing</a>
-            <a href="#about" className="nav-link">About</a>
+            <Link to="/features" className="nav-link">Features</Link>
+            <Link to="/technology" className="nav-link">Technology</Link>
+            <Link to="/pricing" className="nav-link">Pricing</Link>
+            <Link to="/about" className="nav-link">About</Link>
           </nav>
 
           {/* CTA Buttons */}
           <div className="header-cta">
-            <Button variant="secondary" size="md">Sign In</Button>
-            <Button variant="primary" size="md">Start Free Trial</Button>
+            <Link to="/signin">
+              <Button variant="secondary" size="md">Sign In</Button>
+            </Link>
+            <Link to="/start-trial">
+              <Button variant="primary" size="md">Start Free Trial</Button>
+            </Link>
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -46,13 +50,17 @@ const Header = () => {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <nav className="nav-mobile">
-            <a href="#features" className="nav-link-mobile" onClick={() => setIsMenuOpen(false)}>Features</a>
-            <a href="#technology" className="nav-link-mobile" onClick={() => setIsMenuOpen(false)}>Technology</a>
-            <a href="#pricing" className="nav-link-mobile" onClick={() => setIsMenuOpen(false)}>Pricing</a>
-            <a href="#about" className="nav-link-mobile" onClick={() => setIsMenuOpen(false)}>About</a>
+            <Link to="/features" className="nav-link-mobile" onClick={() => setIsMenuOpen(false)}>Features</Link>
+            <Link to="/technology" className="nav-link-mobile" onClick={() => setIsMenuOpen(false)}>Technology</Link>
+            <Link to="/pricing" className="nav-link-mobile" onClick={() => setIsMenuOpen(false)}>Pricing</Link>
+            <Link to="/about" className="nav-link-mobile" onClick={() => setIsMenuOpen(false)}>About</Link>
             <div className="mobile-cta">
-              <Button variant="secondary" size="sm">Sign In</Button>
-              <Button variant="primary" size="sm">Start Free Trial</Button>
+              <Link to="/signin">
+                <Button variant="secondary" size="sm">Sign In</Button>
+              </Link>
+              <Link to="/start-trial">
+                <Button variant="primary" size="sm">Start Free Trial</Button>
+              </Link>
             </div>
           </nav>
         )}

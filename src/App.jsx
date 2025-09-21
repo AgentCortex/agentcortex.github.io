@@ -1,10 +1,14 @@
 import React from 'react'
+import { Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
-import Hero from './components/Hero'
-import Features from './components/Features'
-import Technology from './components/Technology'
-import CTA from './components/CTA'
 import Footer from './components/Footer'
+import HomePage from './pages/HomePage'
+import FeaturesPage from './pages/FeaturesPage'
+import TechnologyPage from './pages/TechnologyPage'
+import PricingPage from './pages/PricingPage'
+import AboutPage from './pages/AboutPage'
+import SignInPage from './pages/SignInPage'
+import StartTrialPage from './pages/StartTrialPage'
 import './App.css'
 
 function App() {
@@ -12,10 +16,15 @@ function App() {
     <div className="App">
       <Header />
       <main>
-        <Hero />
-        <Features />
-        <Technology />
-        <CTA />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/features" element={<FeaturesPage />} />
+          <Route path="/technology" element={<TechnologyPage />} />
+          <Route path="/pricing" element={<PricingPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/signin" element={<SignInPage />} />
+          <Route path="/start-trial" element={<StartTrialPage />} />
+        </Routes>
       </main>
       <Footer />
     </div>

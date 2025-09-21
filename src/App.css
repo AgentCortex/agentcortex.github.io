@@ -236,3 +236,9 @@ body {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
+
+/* Page Container */
+.page-container {
+  min-height: calc(100vh - 80px); /* Adjust for header height */
+  padding-top: 80px; /* Account for fixed header */
+}

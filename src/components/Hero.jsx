@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Button from './Button';
 import './Hero.css';
 
@@ -30,7 +31,9 @@ const Hero = () => {
             </p>
 
             <div className="hero-cta">
-              <Button variant="hero" size="xl">Start Free Trial</Button>
+              <Link to="/start-trial">
+                <Button variant="hero" size="xl">Start Free Trial</Button>
+              </Link>
               <Button variant="outline" size="xl">Watch Demo</Button>
             </div>
 

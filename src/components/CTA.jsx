@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Button from './Button';
 import './CTA.css';
 
@@ -49,9 +50,11 @@ const CTA = () => {
 
             {/* CTA Buttons */}
             <div className="cta-buttons">
-              <Button variant="hero" size="xl">
-                Start Free Trial
-              </Button>
+              <Link to="/start-trial">
+                <Button variant="hero" size="xl">
+                  Start Free Trial
+                </Button>
+              </Link>
               <Button variant="outline" size="xl">
                 Schedule Demo
               </Button>

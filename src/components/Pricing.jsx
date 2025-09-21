@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Button from './Button';
 import './Pricing.css';
 
@@ -136,13 +137,25 @@ const Pricing = () => {
               </div>
 
               <div className="pricing-footer">
-                <Button 
-                  variant={plan.highlight ? 'primary' : 'secondary'} 
-                  size="lg"
-                  className="w-full"
-                >
-                  {plan.cta}
-                </Button>
+                {plan.cta === 'Start Free Trial' ? (
+                  <Link to="/start-trial" className="w-full">
+                    <Button 
+                      variant={plan.highlight ? 'primary' : 'secondary'} 
+                      size="lg"
+                      className="w-full"
+                    >
+                      {plan.cta}
+                    </Button>
+                  </Link>
+                ) : (
+                  <Button 
+                    variant={plan.highlight ? 'primary' : 'secondary'} 
+                    size="lg"
+                    className="w-full"
+                  >
+                    {plan.cta}
+                  </Button>
+                )}
               </div>
             </div>
           ))}
