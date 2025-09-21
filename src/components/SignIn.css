@@ -1,0 +1,341 @@
+/* Sign In Section */
+.signin {
+  background: var(--bg-primary);
+  min-height: 100vh;
+  padding: var(--space-2xl) 0;
+  display: flex;
+  align-items: center;
+}
+
+.signin-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3xl);
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Left Side - Branding */
+.signin-branding {
+  padding: var(--space-2xl);
+}
+
+.branding-content {
+  max-width: 500px;
+}
+
+.branding-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: var(--space-lg);
+  line-height: 1.2;
+}
+
+.branding-subtitle {
+  font-size: var(--font-size-lg);
+  color: var(--text-secondary);
+  margin-bottom: var(--space-2xl);
+  line-height: 1.6;
+}
+
+.benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  font-size: var(--font-size-base);
+  color: var(--text-secondary);
+}
+
+.benefit-icon {
+  font-size: var(--font-size-xl);
+  width: 30px;
+  text-align: center;
+}
+
+/* Right Side - Form */
+.signin-form-container {
+  background: var(--bg-card);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  padding: var(--space-3xl);
+  backdrop-filter: blur(10px);
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: var(--space-2xl);
+}
+
+.form-title {
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: var(--space-sm);
+}
+
+.form-subtitle {
+  color: var(--text-secondary);
+  font-size: var(--font-size-base);
+}
+
+/* Form Fields */
+.signin-form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.form-label {
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: var(--font-size-base);
+}
+
+.form-input {
+  background: var(--bg-secondary);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: var(--space-md) var(--space-lg);
+  color: var(--text-primary);
+  font-size: var(--font-size-base);
+  transition: all 0.3s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.1);
+}
+
+.form-input::placeholder {
+  color: var(--text-muted);
+}
+
+/* Password Input */
+.password-input-container {
+  position: relative;
+}
+
+.password-toggle {
+  position: absolute;
+  right: var(--space-lg);
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: var(--font-size-lg);
+  padding: var(--space-xs);
+  transition: color 0.3s ease;
+}
+
+.password-toggle:hover {
+  color: var(--text-secondary);
+}
+
+/* Form Options */
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+  cursor: pointer;
+  position: relative;
+}
+
+.checkbox-container input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+}
+
+.checkbox-container input[type="checkbox"]:checked {
+  background: var(--gradient-primary);
+  border-color: var(--primary);
+}
+
+.checkbox-container input[type="checkbox"]:checked::after {
+  content: '✓';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--text-primary);
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.forgot-password {
+  color: var(--primary-light);
+  text-decoration: none;
+  font-size: var(--font-size-sm);
+  transition: color 0.3s ease;
+}
+
+.forgot-password:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+/* Sign In Button */
+.signin-button {
+  width: 100%;
+  margin-top: var(--space-md);
+}
+
+/* Form Divider */
+.form-divider {
+  position: relative;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: var(--font-size-sm);
+  margin: var(--space-lg) 0;
+}
+
+.form-divider::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 1;
+}
+
+.form-divider span {
+  background: var(--bg-card);
+  padding: 0 var(--space-md);
+  position: relative;
+  z-index: 2;
+}
+
+/* Social Sign In */
+.social-signin {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-md);
+  background: var(--bg-secondary);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: var(--space-md) var(--space-lg);
+  color: var(--text-primary);
+  font-size: var(--font-size-base);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.social-button:hover {
+  background: var(--bg-tertiary);
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.social-icon {
+  font-size: var(--font-size-lg);
+}
+
+/* Sign Up Link */
+.signup-link {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+  margin-top: var(--space-lg);
+}
+
+.signup-link-text {
+  color: var(--primary-light);
+  text-decoration: none;
+  margin-left: var(--space-xs);
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.signup-link-text:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .signin-container {
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+    max-width: 600px;
+  }
+  
+  .signin-branding {
+    text-align: center;
+    order: 2;
+  }
+  
+  .signin-form-container {
+    order: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .signin {
+    padding: var(--space-lg) 0;
+  }
+  
+  .signin-form-container {
+    padding: var(--space-2xl);
+  }
+  
+  .form-options {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-sm);
+  }
+  
+  .branding-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .signin-form-container {
+    padding: var(--space-xl);
+    border-radius: 20px;
+  }
+  
+  .form-input,
+  .social-button {
+    padding: var(--space-sm) var(--space-md);
+  }
+}

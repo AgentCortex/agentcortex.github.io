@@ -5,38 +5,38 @@ const Features = () => {
   const features = [
     {
       icon: '🧠',
-      title: 'Advanced RAG Technology',
-      description: 'Retrieval-Augmented Generation that combines your proprietary data with AI reasoning for contextually accurate responses.',
-      highlight: 'RAG-Powered'
+      title: 'Neural Cortex Architecture',
+      description: 'Brain-inspired RAG technology that mimics human cognitive processes, creating interconnected knowledge networks for superior contextual understanding.',
+      highlight: 'Cortex-Powered'
     },
     {
-      icon: '⚡',
-      title: 'Intelligent Decision Making',
-      description: 'AI agents that analyze complex scenarios and make autonomous decisions based on your business rules and objectives.',
-      highlight: 'Autonomous'
+      icon: '🔗',
+      title: 'Synaptic Knowledge Linking',
+      description: 'Advanced vector embeddings create synaptic connections between data points, enabling human-like reasoning and association.',
+      highlight: 'Synaptic'
     },
     {
-      icon: '🔄',
-      title: 'Automated Workflows',
-      description: 'Streamline complex business processes with intelligent automation that adapts to changing requirements.',
+      icon: '�',
+      title: 'Adaptive Memory Systems',
+      description: 'Multi-layered memory architecture that stores, retrieves, and processes information like human short-term and long-term memory.',
       highlight: 'Adaptive'
     },
     {
-      icon: '🚀',
-      title: 'Real-time Processing',
-      description: 'Lightning-fast response times with distributed computing architecture for immediate insights and actions.',
+      icon: '⚡',
+      title: 'Real-time Neural Processing',
+      description: 'Lightning-fast neural pathways process complex queries through distributed cortex networks for instant intelligent responses.',
       highlight: 'Real-time'
     },
     {
-      icon: '🔒',
-      title: 'Enterprise Security',
-      description: 'Bank-level security with end-to-end encryption, compliance frameworks, and audit trails.',
-      highlight: 'Secure'
+      icon: '🎯',
+      title: 'Contextual Awareness Engine',
+      description: 'Deep contextual understanding that maintains conversation history and domain expertise like human cognitive awareness.',
+      highlight: 'Contextual'
     },
     {
       icon: '📈',
-      title: 'Continuous Learning',
-      description: 'Self-improving AI that learns from interactions and outcomes to enhance performance over time.',
+      title: 'Continuous Cortex Evolution',
+      description: 'Self-improving neural networks that strengthen connections through use, mimicking brain neuroplasticity for enhanced performance.',
       highlight: 'Evolving'
     }
   ];
@@ -46,8 +46,11 @@ const Features = () => {
       <div className="container">
         <div className="features-header text-center mb-12 animate-fade-up">
           <h2 className="section-title">
-            Powerful <span className="gradient-text">AI Capabilities</span>
+            Neural <span className="gradient-text">Cortex Capabilities</span>
           </h2>
+          <p className="section-subtitle">
+            Harness the power of brain-inspired AI architecture that thinks, learns, and adapts like the human mind
+          </p>
           <p className="section-subtitle">
             Discover the advanced features that make AgenticCortex the leading platform for intelligent automation
           </p>

@@ -13,23 +13,23 @@ const Technology = () => {
   const architectureSteps = [
     {
       step: '01',
-      title: 'Data Ingestion',
-      description: 'Secure ingestion of your proprietary data with automatic preprocessing and optimization.'
+      title: 'Neural Data Absorption',
+      description: 'Brain-like data ingestion that processes information through multiple cortex layers, mimicking human learning patterns.'
     },
     {
       step: '02', 
-      title: 'Vector Embedding',
-      description: 'Advanced embedding models convert your data into high-dimensional vector representations.'
+      title: 'Synaptic Vector Formation',
+      description: 'Transform data into neural pathways using advanced embeddings that create interconnected knowledge synapses.'
     },
     {
       step: '03',
-      title: 'Retrieval System',
-      description: 'Intelligent retrieval mechanisms find the most relevant context for each query.'
+      title: 'Cortex Memory Retrieval',
+      description: 'Intelligent memory systems navigate neural networks to retrieve contextually relevant information like human recall.'
     },
     {
       step: '04',
-      title: 'AI Generation',
-      description: 'State-of-the-art language models generate accurate, contextual responses.'
+      title: 'Conscious Response Generation',
+      description: 'Sophisticated language cortex generates human-like responses through multi-layered neural processing.'
     }
   ];
 
@@ -41,11 +41,11 @@ const Technology = () => {
           {/* Technology Overview */}
           <div className="tech-overview animate-fade-up">
             <h2 className="section-title">
-              Advanced <span className="gradient-text">RAG Architecture</span>
+              Neural <span className="gradient-text">Cortex Architecture</span>
             </h2>
             <p className="section-subtitle">
-              Our proprietary Retrieval-Augmented Generation system combines the power of 
-              large language models with your specific domain knowledge for unparalleled accuracy.
+              Our revolutionary brain-inspired RAG system replicates human cognitive architecture, 
+              creating AI agents with cortex-like reasoning, memory, and contextual awareness.
             </p>
             
             {/* Technology Stack */}
